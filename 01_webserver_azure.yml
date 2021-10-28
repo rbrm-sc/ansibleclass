@@ -3,7 +3,7 @@
   become: yes
   vars:
     websiteheader: "Ansible Playbook"
-    websiteauthor: "Jesper Berth"
+    websiteauthor: "Rabia"
   tasks:
   - name: Install Apache
     dnf:
