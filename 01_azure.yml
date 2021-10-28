@@ -2,14 +2,14 @@
 - hosts: localhost
   connection: local
   vars:
-    user: user4
+    user: rbrm-sc
   tasks:
   - name: Create resource group
     azure_rm_resourcegroup:
-      name: "webserver_{{ user4 }}"
+      name: "webserver_{{ rbrm-sc }}"
       location: northeurope
       tags:
-          solution: "webserver_{{ user4 }}"
+          solution: "webserver_{{ rbrm-sc }}"
           delete: ansibletraining
     register: rg
   - debug:
