@@ -1,7 +1,6 @@
-
 ---
 - hosts: linuxservers
-  become: Yes
+  become: True
 
   tasks:
     - name: Create dir /mnt/resource/
@@ -30,6 +29,5 @@
       loop: "{{ download_loop.results }}"
       register: async_loop_jobs
       until: async_loop_jobs.finished
-      
 
 
